@@ -11,6 +11,8 @@ An Explainable AI (XAI) pipeline designed to predict non-ICU clinical deteriorat
 
 ---
 
+<div>
+
 ## 📑 Table of Contents
 1. [Problem Statement](#-problem-statement)
 2. [The Solution](#-the-solution)
