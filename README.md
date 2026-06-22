@@ -1,3 +1,5 @@
+<div align="center">
+
 # 🏥 Proactive Rescue: AI-Driven Early Warning System 
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)
