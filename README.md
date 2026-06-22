@@ -64,3 +64,31 @@ graph TD
     class A primary;
     class F secondary;
 ```
+---
+
+## 📈 Key Findings & Explainable AI
+
+### Performance Comparison
+Because missing a deteriorating patient is clinically costly, the XGBoost model was optimized for sensitivity using `scale_pos_weight=20`. 
+
+| Metric | Baseline (Logistic Reg) | Improved (XGBoost) | Clinical Impact |
+| :--- | :--- | :--- | :--- |
+| **Overall Accuracy** | 64.0% | **71.0%** | +7.0% Overall Correctness |
+| **Class 1 Recall** | 33.0% | **33.0%** | Both identified critical deterioration events |
+| **Class 1 Precision**| 5.0% | **7.0%** | XGBoost marginally reduced false alarms |
+| **ROC-AUC Score** | **0.5897** | 0.5705 | Linear model ranked probabilities slightly better |
+
+*Note: The extreme size restriction of the test cohort (only 3 true positive cases) limits the mathematical divergence between models.*
+
+### Explainable AI (XAI) Focus
+To combat "Alarm Fatigue" in clinical settings, the model does not just output a risk score; it provides the actionable *cause*.
+* **Global XAI:** Feature importance revealed that **Heart Rate Volatility (Std)** drives ~57% of the model's decision-making, compared to 43% for Mean Heart Rate. *Conclusion: Physiological instability is a stronger predictor than static averages.*
+* **Local XAI:** The system generates a Patient-Specific Diagnosis (e.g., *“Target Patient Index 3: 88.62% Risk. CAUSE: Physiological Instability”*), giving nurses immediate context for bedside review.
+
+---
+
+## 🚀 How to Run
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YourUsername/YourRepositoryName.git
