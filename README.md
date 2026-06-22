@@ -92,3 +92,29 @@ To combat "Alarm Fatigue" in clinical settings, the model does not just output a
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/YourUsername/YourRepositoryName.git
+   ```
+---
+
+## 🛠️ Requirements & Dependencies
+This project requires Python 3.8+ and the following core libraries. If you are using Google Colab, most of these are pre-installed.
+* `pandas` & `numpy` (Data manipulation)
+* `scikit-learn` (Baseline modeling, scaling, and evaluation metrics)
+* `xgboost` (Advanced non-linear gradient boosting)
+* `imbalanced-learn` (SMOTE implementation for class balancing)
+* `matplotlib` & `seaborn` (Data visualization)
+
+---
+
+## 📂 Project Structure
+```text
+Proactive-Rescue-AI/
+│
+├── Final.ipynb                   # Main executable Jupyter/Colab Notebook containing the full pipeline
+├── Final_Submission_Report.pdf   # Comprehensive project documentation and clinical analysis
+├── README.md                     # Project overview and repository guide
+│
+└── Dataset-MIMIC_IV/             # (Cloned automatically during script execution)
+    ├── admissions.csv.gz         # Patient admission and outcome data
+    ├── chartevents.csv.gz        # High-frequency vital signs (Heart Rate, SpO2)
+    └── labevents.csv.gz          # Low-frequency biomarkers (Lactate)
+```
