@@ -47,7 +47,7 @@ The pipeline processes raw, irregular clinical time-series data, balances the tr
 
 ```mermaid
 graph TD
-    A[MIMIC-IV EHR Data] --> B{Data Preprocessing}
+    A[MIMIC-IV  Dataset] --> B{Data Preprocessing}
     B -->|LOCF Imputation| C[Handle Missing Labs]
     B -->|Aggregation| D[Mean & Std Volatility]
     C --> E[Data Splitting]
