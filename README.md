@@ -9,9 +9,8 @@
 
 An Explainable AI (XAI) pipeline designed to predict non-ICU clinical deterioration 6–12 hours in advance, bridging the hospital monitoring gap. 
 
----
-
 <div>
+---
 
 ## 📑 Table of Contents
 1. [Problem Statement](#-problem-statement)
