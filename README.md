@@ -60,10 +60,6 @@ graph TD
     I -->|Global| J[Feature Importance]
     I -->|Local| K[Clinical Alarm Diagnosis]
     
-    classDef primary fill:#1f77b4,stroke:#fff,stroke-width:2px,color:#fff;
-    classDef secondary fill:#ff7f0e,stroke:#fff,stroke-width:2px,color:#fff;
-    classDef highlight fill:#2ca02c,stroke:#fff,stroke-width:2px,color:#fff;
-    
     class G,I highlight;
     class A primary;
     class F secondary;
